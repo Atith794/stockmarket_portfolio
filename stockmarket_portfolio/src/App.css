@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(135deg, #f0f2f5, #cfd8dc);
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+.App {
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	color: #333;
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	color: #4caf50;
+	margin-top: 30px;
+	font-size: 1.75em;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-width: 600px;
+}
+
+li {
+	background: #fff;
+	color: #333;
+	padding: 15px;
+	margin: 10px 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	background: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease, transform 0.3s ease;
+	font-size: 1em;
+}
+
+button:hover {
+	background: #45a049;
+	transform: scale(1.05);
+}
+
+nav {
+	background: #333;
+	padding: 15px 0;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 1.125em;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #4caf50;
+}
+
+@media (max-width: 600px) {
+	nav a {
+		display: block;
+		margin: 10px 0;
+		text-align: center;
+	}
+}
